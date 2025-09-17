@@ -1,81 +1,36 @@
-# Cognitive Skills & Student Performance Dashboard
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Project Overview
+## Getting Started
 
-This project analyzes the relationship between cognitive skills and student assessment performance using a synthetic dataset. It includes:
-- A reproducible data generator
-- Jupyter Notebook for EDA, modeling, clustering, and insights
-- An interactive Next.js dashboard for visualization and exploration
-
-## Repo Structure
-
-```
-repo-root/
-├─ dashboard/                  # Next.js app (existing folder)
-├─ notebooks/
-│  └─ analysis.ipynb
-├─ data/
-│  ├─ students.csv             # generated dataset
-│  └─ students_with_clusters.csv
-├─ models/
-│  └─ pipeline.pkl
-├─ scripts/
-│  └─ generate_students.py
-├─ requirements.txt
-├─ README.md
-├─ .gitignore
-```
-
-## Setup & Usage
-
-### 1. Generate Dataset
+First, run the development server:
 
 ```bash
-python scripts/generate_students.py --n 1000 --seed 42
-```
-
-### 2. Run Jupyter Notebook
-
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooks/analysis.ipynb
-```
-
-### 3. Run Dashboard Locally
-
-```bash
-cd dashboard
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the dashboard.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 4. Deploy to Vercel
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-- Push your repo to GitHub
-- Connect to [Vercel](https://vercel.com/import)
-- Set up project (no env vars needed by default)
-- Deploy and share the public link
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Findings Summary
+## Learn More
 
-*To be filled by students after analysis.*
+To learn more about Next.js, take a look at the following resources:
 
-## Submission Checklist
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- [ ] Dataset generated and committed (`data/students.csv`)
-- [ ] Notebook runs end-to-end and exports PNGs/models
-- [ ] Dashboard displays all required charts, table, and insights
-- [ ] Model artifacts saved in `models/`
-- [ ] Clusters/personas visible in dashboard
-- [ ] README and SUBMISSION.md completed
-- [ ] Deployed to Vercel and public URL provided
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deadline
+## Deploy on Vercel
 
-**Submission deadline:** `YYYY-MM-DDTHH:MM:SS+05:30` (update as instructed)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-For detailed submission and branch/PR instructions, see `SUBMISSION.md`.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
